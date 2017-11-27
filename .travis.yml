@@ -2,6 +2,7 @@ language: cpp
 matrix:
   include:
     - os: linux
+      sudo: required
       dist: xenial
       script: make release-static
     - os: osx
