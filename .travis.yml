@@ -16,10 +16,3 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-    packages:
-      - libssl-dev
-      - libboost-all-dev
-      - build-essential
-      - cmake
-      - pkg-config
-      - libunbound-dev
