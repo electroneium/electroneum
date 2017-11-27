@@ -12,7 +12,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install openssl ; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install pkg-config; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install libboost-all-dev libssl-dev build-essential cmake pkg-config libunbound-dev -y ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install libboost-all-dev libssl-dev build-essential cmake pkg-config libunbound-dev --allow-unauthenticated -y; fi
 addons:
   apt:
     sources:
